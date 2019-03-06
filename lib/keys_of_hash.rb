@@ -1,9 +1,9 @@
 require 'pry'
 class Hash
-  def keys_of(arguments)
+  def keys_of(*arguments)
     #binding.pry
     animals = []
-    arguments = *arguments
+    #arguments = *arguments
     arguments.each do |location|
       self.each do |hash_animal,hash_location|
         if hash_location == location
@@ -18,4 +18,4 @@ end
 # hashy = {"sugar glider"=>"Australia","aye-aye"=> "Madagascar","red-footed tortoise"=>"Panama","kangaroo"=> "Australia","tomato frog"=>"Madagascar","koala"=>"Australia"}
 # puts "hashy"
 # binding.pry
-# puts "depry"
+# puts "de-pry"
