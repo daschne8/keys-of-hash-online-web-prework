@@ -3,7 +3,8 @@ class Hash
   def keys_of(arguments)
     binding.pry
     animals = []
-    (*arguments).each do |location|
+    arfuments = *arguments
+    arguments.each do |location|
       self.each do |hash_animal,hash_location|
         if hash_location == location
           animals << hash_animal
